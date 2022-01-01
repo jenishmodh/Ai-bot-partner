@@ -1,0 +1,170 @@
+body{
+	margin:0;
+	padding: 0;
+
+overflow-x: hidden;
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(0, 0, 0) 35%, rgb(0, 52, 63) 100%);
+}
+
+/* background */
+.background{
+
+position: absolute;
+width: 100%;
+height: 100%;
+
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, (214, 214, 214) 35%, rgb(34, 0, 0) 100%);
+}
+
+
+
+
+/* Towi Bot */
+.heading{
+width: 310px;
+height: 80px;
+margin: auto;
+font-family: sans-serif;
+font-style: normal;
+/*font-weight: bold;*/
+margin-top: 20px;
+line-height: normal;
+font-size: 72px;
+
+color: #FFFFFF;
+}
+
+.tag-line{
+margin: auto;
+width: 100%;
+font-family: sans-serif;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+font-size: 18px;
+text-align: center;
+color: #FFFFFF;
+
+}
+/* at your service */
+
+/* bottom-eclipse */
+.bottom-eclipse{
+	margin:auto;
+	margin-top: 120px;
+	margin-bottom: 45px;
+	border-radius: 100px;
+	padding-top: 0px;
+	box-sizing: border-box;	
+	width: 110px;
+	height: 110px;
+	
+	background: rgba(255, 255, 255, 0.2);
+}
+
+/* middle-eclipse */
+.middle-eclipse{
+margin:auto;
+padding-top: 0px;
+box-sizing: border-box;
+border-radius: 100px;
+width: 110px;
+height: 110px;
+
+background: rgba(0, 0, 0, 0.5);
+}
+
+
+/* top-eclipse */
+.top-eclipse{
+	margin:auto;
+	border-radius: 100px;
+	width: 110px;
+	
+	height: 110px;
+
+	background: #000000;
+
+}
+
+/* mic */
+.mic{
+	fill: #A26DF1;
+	margin: auto;
+	width: 40px;
+	height: 63px;
+	padding-left: 37px;
+	padding-top: 20px;
+}
+
+
+/* “What time is it “ */
+.input{
+margin: auto;
+text-align: center;	
+height: 22px;
+margin-top: 30px;
+font-family: sans-serif;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+font-size: 18px;
+
+color: #FFFEFE;
+}
+
+/* output-box */
+.output-box{
+	padding: 1px 5px 1px 5px;
+	box-sizing: border-box;
+	margin:auto;
+	width: 300px;
+	min-height: 55px;
+margin-top: 30px;
+
+background: #FFFFFF;
+box-shadow: 0px 4px 29px rgba(15, 15, 15, 0.3);
+border-radius: 50px;
+
+}
+/* The time is 11:54 */
+.output{
+
+font-family:sans-serif;
+font-style: normal;
+line-height: normal;
+font-size: 17px;
+text-align: center;
+color: #A76EF2;
+}
+
+#devDiv{
+	font-family: sans-serif;
+	color: rgba(255,255,255,0.5);
+	position: absolute;
+	font-size: 12px;
+	bottom: 0px;
+	right: 0px;
+	padding-right: 5px;
+}
+#devLink{
+	outline: none;
+	color: rgba(255,255,255,0.7);
+}
+#docDiv{
+	font-family: sans-serif;
+	color: white;
+	position: absolute;
+	font-size: 14px;
+	bottom: 0px;
+	left:  0px;
+	padding-left: 15px;
+	padding-right:  10px;
+	border-top-right-radius: 10px;
+	background-color: rgba(0,0,0,0.3);
+
+}
+
+#docDiv a{
+	color: white;
+}
