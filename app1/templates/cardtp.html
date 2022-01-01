@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AiBotpartner--VoiceChat</title>
+        <link rel="stylesheet" href="{% static 'css/chtvoice.css' %}">
+    </head>
+    <style>
+        
+          .bg{
+              padding: 80px;
+          }
+          .newsletter-text {
+              border: 2px solid white;
+              padding: 280px 40px;
+              margin: 0 auto;
+              position: relative;
+              max-width: 450px;
+              background: rgba(83, 77, 77, 0)
+          }
+          a {
+            text-decoration: none;
+            display: inline-block;
+            margin-right: -10px;
+            padding: 8px 16px;
+            
+          }
+          
+          a:hover {
+            background-color: rgb(0, 0, 0);
+            color: rgb(47, 170, 31);
+          }
+          
+          .previous {
+            background-color: #000000;
+            color: rgb(255, 255, 255);
+          }
+          
+          .next {
+            background-color: #4CAF50;
+            color: rgb(0, 0, 0);
+          }
+          
+          .round {
+            border-radius: 50%;
+          }
+        
+        
+    </style>
+    <body>
+        <div><a href="{% url 'bot' %}" class="previous">&laquo; Back</a></div>
+        <header>Chat with Bot</header>
+        <section class="main">           
+                <div class="user-area">
+                    <img src="{% static 'images/user3.png' %}">
+                </div>
+                <div class="chatarea-main">
+                    <div class="chatarea-outer">
+                        <!-- <div class="chatarea-inner user">Hello hi, how area you, i am good. What about you!</div>
+                        <div class="chatarea-inner chatbot">Hello hi, how area you, i am good. What about you!</div>
+                        <div class="chatarea-inner user">Hello hi, how area you, i am good. What about you!</div> -->
+                    </div>
+                </div>    
+                <div class="chatbot-area">
+                    <img src="{% static 'images/Womble.gif' %}">
+                </div>
+                <button id="mic"><i class="flaticon-microphone"></i></button>
+            </section>
+        <script src="{% static 'js/main.js' %}"></script>
+           
+<div class="bg">
+    <div class="wrap">
+        <div class="newsletter-bg"></div>  
+  <div class="newsletter-text"></div>
+    </div>
+    </div>
+  </div>
+</body>
+    </html>

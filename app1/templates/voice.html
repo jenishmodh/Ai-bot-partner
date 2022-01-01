@@ -1,0 +1,109 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>AiBotpartner--voicebot</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+  	<script src="{% static 'js/temporary.js' %}"></script>
+	<link rel="stylesheet" href="{% static 'css/voicebot.css' %}" type="text/css">
+    <style>
+        
+        .bg{
+            padding: 100px;
+        }
+        .newsletter-text {
+            border: 2px solid white;
+            padding: 250px 1px;
+            margin: 0 auto;
+            position: relative;
+            max-width: 420px;
+            background: rgba(133, 121, 121, 0.1)
+        }
+        a {
+            text-decoration: none;
+            display: inline-block;
+            margin-right: -10px;
+            padding: 8px 16px;
+            
+          }
+          
+          a:hover {
+            background-color: rgb(0, 0, 0);
+            color: rgb(47, 170, 31);
+          }
+          
+          .previous {
+            background-color: #000000;
+            color: rgb(255, 255, 255);
+          }
+          
+          .next {
+            background-color: #4CAF50;
+            color: rgb(0, 0, 0);
+          }
+          
+          .round {
+            border-radius: 50%;
+          }
+        
+      
+  </style>
+</head>
+<body>
+    
+      <div><a href="{% url 'bot' %}" class="previous">&laquo; Back</a></div>
+
+	<div class="background">
+		<p class="heading">VoiceBot</p>
+		<!-- <p class="tag-line">a voice bot </p> -->
+       
+        <!-- <div class="bg">
+            <div class="wrap">
+                <div class="newsletter-bg"></div>  
+          <div class="newsletter-text"></div>
+            </div>
+            </div>
+          </div> -->
+		<div class="circles">
+			<div class="bottom-eclipse" id="outerCircle">
+				<div class="middle-eclipse" id="middleCircle">
+					<div class="top-eclipse" onClick="toggleButton()">
+						<div class="mic-svg">
+							
+							<svg version="1.1" class="mic" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="792px" height="792px" viewBox="0 0 792 792" style="enable-background:new 0 0 792 792;" xml:space="preserve"><g><g><path d="M178.2,316.8c-19.8,0-19.8,19.879-19.8,19.879v113.533c0,50.729,22.255,197.406,217.8,206.673V752.4H233.64V792h316.801v-39.6H415.8v-95.516c195.545-9.267,217.799-155.944,217.799-206.673V342.976c0,0,0.516-26.176-19.641-26.176s-20.156,26.176-20.156,26.176v104.781c0,52.392-23.76,170.677-197.842,170.677c-174.082,0-197.921-118.285-197.921-170.677V336.679C198.079,336.679,198,316.8,178.2,316.8z"/><path d="M514.8,411.84V102.96c0,0,0-102.96-118.8-102.96C277.2,0,277.2,102.96,277.2,102.96v308.88c0,0,0,102.96,118.8,102.96C514.8,514.8,514.8,411.84,514.8,411.84z M316.8,420.75V94.05c0,0,0-54.45,79.2-54.45c79.201,0,79.201,54.45,79.201,54.45v326.7c0,0,0,54.45-79.201,54.45C316.8,475.2,316.8,420.75,316.8,420.75z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="input typing" id="input">"Hello"</div>
+
+		<div class="output-box">
+			<p class="output" id="output">the output comes here</p>
+		</div>
+
+	</div>
+		<!-- <div id="docDiv"><a href="{% static 'documentation/docs.html' %}"><p id="docLine">docs</p></a></div> -->
+		<!-- <div id="devDiv"><p id="devLine">Made with ❤ by <a id="devLink" href="https://google.com/search?q=harsha20599" target="_blank">harsha20599</a></p></div> -->
+	
+	<script src="{% static 'js/speech.js' %}"></script>
+	<script src="{% static 'js/data.js' %}"></script>
+        <!-- <div class="bg">
+            <div class="wrap">
+                <div class="newsletter-bg"></div>  
+        <div class="newsletter-text"></div>
+            </div>
+            </div>
+        </div> -->
+    
+		
+</body>
+</html>

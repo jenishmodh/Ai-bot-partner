@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>AiBotpartner--Coming Soon</title>
+      <script src="https://kit.fontawesome.com/aa09fdd343.js"></script>
+
+<link rel="stylesheet" href="{% static 'css/coming.css' %}">
+<style>
+
+    a {
+      text-decoration: none;
+      display: inline-block;
+      margin-right: -10px;
+      padding: 8px 16px;
+      
+    }
+    
+    a:hover {
+      background-color: rgb(0, 0, 0);
+      color: rgb(47, 170, 31);
+    }
+    
+    .previous {
+      background-color: #000000;
+      color: rgb(255, 255, 255);
+    }
+    
+    .next {
+      background-color: #4CAF50;
+      color: rgb(0, 0, 0);
+    }
+    
+    .round {
+      border-radius: 50%;
+    }
+    </style>
+</head>
+<body>
+    <div><a href="{% url 'bot' %}" class="previous">&laquo; Back</a></div>
+          
+<!-- partial:index.partial.html -->
+<div class="container">
+    
+    <div class="box">
+        
+        <div class="title">
+            <span class="block"></span>
+            <h1>COMING<span></span></h1>
+        </div>
+
+        <div class="role">
+            <div class="block"></div>
+            <h2>SOON</h2>
+        </div>
+
+    </div>
+</div>
+
+
+  
+</body>
+</html>

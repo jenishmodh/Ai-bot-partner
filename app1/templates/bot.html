@@ -1,0 +1,311 @@
+{% load static %}
+<style>
+    * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+body{
+    
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+ 
+  /** THIS CODE ISNT MY!!!!!!! 
+  Only the text on buttons was made for me. **/
+  @import "https://fonts.googleapis.com/css?family=Alegreya+Sans:400,500";
+  
+  .menu, .button {
+    width: 85px;
+    height: 85px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  
+  .menu {
+    position: relative;
+    margin: 0px;
+    top: -280px;
+    left: -900px;
+    -webkit-transition: -webkit-transform 1.125s cubic-bezier(0.39, 1.52, 0.46, 0.92);
+    transition: -webkit-transform 1.125s cubic-bezier(0.39, 1.52, 0.46, 0.92);
+    transition: transform 1.125s cubic-bezier(0.39, 1.52, 0.46, 0.92);
+    transition: transform 1.125s cubic-bezier(0.39, 1.52, 0.46, 0.92), -webkit-transform 1.125s cubic-bezier(0.39, 1.52, 0.46, 0.92);
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
+    cursor: pointer;
+  }
+  
+  .button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    mix-blend-mode: multiply;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 33%;
+    opacity: 0.8;
+    font: 25px/100px Alegreya Sans, sans-serif;
+    -webkit-transition: -webkit-transform 0.75s cubic-bezier(0.39, 1.52, 0.46, 0.92);
+    transition: -webkit-transform 0.75s cubic-bezier(0.39, 1.52, 0.46, 0.92);
+    transition: transform 0.75s cubic-bezier(0.39, 1.52, 0.46, 0.92);
+    transition: transform 0.75s cubic-bezier(0.39, 1.52, 0.46, 0.92), -webkit-transform 0.75s cubic-bezier(0.39, 1.52, 0.46, 0.92);
+    will-change: transform;
+  }
+  .button.closed {
+    -webkit-transform: translate3d(0, 0, 0) !important;
+            transform: translate3d(0, 0, 0) !important;
+  }
+  
+  .main {
+    color: #f8f7f2;
+    text-align: center;
+    mix-blend-mode: normal;
+    line-height: 100px;
+    box-shadow: 0 0 0 5px rgba(3, 15, 1, 0.1);
+    -webkit-transition: border-color 0.75s, color 0.75s;
+    transition: border-color 0.75s, color 0.75s;
+    will-change: color, border-color;
+  }
+  .closed .main {
+    color: #f8f7f2;
+    box-shadow: 0 0 0 5px rgba(3, 15, 1, 0);
+  }
+  
+  .home {
+    background-color: #1ba5cd;
+    top: 0%;
+    left: 225%;
+    background-image: url(https://bennettfeely.com/cdpn/home.svg);
+    -webkit-transition-duration: 0.525s;
+            transition-duration: 0.525s;
+  }
+  .home-text {
+    color:#1ba5cd;
+    text-decoration:none;
+    display:inline;
+    font-family: 'mss', Helvetica, sans-serif;
+  }
+  .home-text > span {
+    position:relative;
+    top:0;
+    left:110%;
+  }
+  .closed .home {
+    -webkit-transform: translate3d(-225%, -10%, 0) rotate(-180deg);
+            transform: translate3d(-225%, -10%, 0) rotate(-180deg);
+  }
+  
+  .music {
+    background-color: #1ab254;
+    top: 86.10368%;
+    left: 207.873%;
+    background-image: url(https://bennettfeely.com/cdpn/music.svg);
+    -webkit-transition-duration: 0.675s;
+            transition-duration: 0.675s;
+  }
+  .music-text {
+    color:#1ab254;
+    text-decoration:none;
+    display:inline;
+    font-family: 'mss', Helvetica, sans-serif;
+  
+  }
+  .music-text > span {
+    position:relative;
+    top:20%;
+    left:105%;
+  }
+  .off {
+    display:none;
+  }
+  .closed .music {
+    -webkit-transform: translate3d(-198.36244%, -89.19384%, 0) rotate(-180deg);
+            transform: translate3d(-198.36244%, -89.19384%, 0) rotate(-180deg);
+  }
+  
+  .messages {
+    background-color: #fec72e;
+    top: 159.09908%;
+    left: 159.09908%;
+    background-image: url(https://bennettfeely.com/cdpn/messages.svg);
+    -webkit-transition-duration: 0.825s;
+            transition-duration: 0.825s;
+  }
+  .messages-text {
+    color:#fec72e;
+    text-decoration:none;
+    display:inline;
+    font-family: 'mss', Helvetica, sans-serif;
+  }
+  .messages-text > span {
+    position:relative;
+    top:35%;
+    left:100%;
+  }
+  .closed .messages {
+    -webkit-transform: translate3d(-153.22122%, -151.00892%, 0) rotate(-180deg);
+            transform: translate3d(-153.22122%, -151.00892%, 0) rotate(-180deg);
+  }
+  
+  .places {
+    background-color: #fa7d39;
+    top: 207.873%;
+    left: 86.10368%;
+    background-image: url(https://bennettfeely.com/cdpn/places.svg);
+    -webkit-transition-duration: 0.975s;
+            transition-duration: 0.975s;
+  }
+  .places-text {
+    color:#fa7d39;
+    text-decoration:none;
+    display:inline;
+    font-family: 'mss', Helvetica, sans-serif;
+  }
+  .places-text > span {
+    position:relative;
+    top:55%;
+    left:65%;
+  }
+  .closed .places {
+    -webkit-transform: translate3d(-91.98154%, -199.78284%, 0) rotate(-180deg);
+            transform: translate3d(-91.98154%, -199.78284%, 0) rotate(-180deg);
+  }
+  
+  .bookmark {
+    background-color: #ee5656;
+    top: 225%;
+    left: 0%;
+    background-image: url(https://bennettfeely.com/cdpn/bookmark.svg);
+    -webkit-transition-duration: 1.125s;
+            transition-duration: 1.125s;
+  }
+  .bookmark-text {
+    color:#ee5656;
+    text-decoration:none;
+    display:inline;
+    font-family: 'mss', Helvetica, sans-serif;
+  }
+  .bookmark-text > span {
+    position:relative;
+    top:60%;
+    left:0%;
+  }
+  .closed .bookmark {
+    -webkit-transform: translate3d(-9.51056%, -228.09016%, 0) rotate(-180deg);
+            transform: translate3d(-9.51056%, -228.09016%, 0) rotate(-180deg);
+  
+
+
+</style>
+
+<head>
+  <title>AiBotpartner--Bot</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  </head>
+ 
+<body>
+  <img height="500" width="500" src="https://storage.googleapis.com/media.helloumi.com/125042/channels/FJ3DZITWCY268043HGFACIP9CFUA9XM6.gif">
+<!-- partial:index.partial.html -->
+<div class="view">
+  <main class="page">
+    <div class="transform-container">
+      <div class="catalog">
+        <span class="menu-opener"></span>
+        <span class="profile-opener"></span>
+
+        
+      </div>
+    </div>
+  </main>
+
+  <div class="overlay"></div>
+
+  <div class="nav-slide side-menu">
+    
+  </div>
+  
+  <div class="nav-slide side-profile">
+    <a style="color: rgb(202, 238, 103);">PROFILE MENU</a>
+    <ul>
+      <li style="color: aquamarine;">Account</li>
+      <li style="color: aquamarine;">Setting</li>
+      <li style="color: aquamarine;">Feedback</li>
+      <li style="color: aquamarine;">About-us</li><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <li style=" font-size:large;" ><a href="{% url 'logout' %}">log-Out</a></li>
+      <!-- <li>Nav item 04</li>
+      <li>Nav item 05</li> -->
+    </ul>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="{% static 'js/dashboard.js' %}"></script>
+  
+  <div class='menu closed' >     
+    <a  href="{% url 'chtbot' %}" class='music button music-text'>
+      <span  class="off">Chatbot</span>
+    </a>
+    <a href="{% url 'chvice' %}"  class='messages button messages-text'>
+      <span class="off">Chatvoice</span>
+    </a>
+    <a href="{% url 'voice' %}"  class='places button places-text'>
+      <span class="off">VoiceBot</span>
+    </a>
+    <a href="{% url 'coming' %}" class='bookmark button bookmark-text'>
+      <span class="off">Soon</span>
+    </a>
+    <div class='main button' >Bot</div>
+  </div>
+
+
+
+
+
+
+   
+    
+  
+
+  
+<script>
+    $( ".menu" ).on( "click", function(e) {
+      $(this).toggleClass("closed");
+    });
+    $( ".menu" ).on( "click", function() {
+      $('.home-text > span').toggleClass('off');
+    });
+    $( ".menu" ).on( "click", function() {
+      $('.music-text > span').toggleClass('off');
+    });
+    $( ".menu" ).on( "click", function() {
+      $('.messages-text > span').toggleClass('off');
+    });
+    $( ".menu" ).on( "click", function() {
+      $('.places-text > span').toggleClass('off');
+    });
+    $( ".menu" ).on( "click", function() {
+      $('.bookmark-text > span').toggleClass('off');
+    });
+  </script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+  </script>
+
+
+
+</body>

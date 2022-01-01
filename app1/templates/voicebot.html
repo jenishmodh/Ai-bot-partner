@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>AiBotpartner--VoiceBot</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.6.3/css/all.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source+Code+Pro:700,900|Source+Sans+Pro:300,400,700'><link rel="stylesheet" href="{% static 'css/voice.css' %}">
+
+</head>
+<body>
+  <form method="POST" action="{% url 'voice' %}">
+    {% csrf_token %}
+  <div class="djhbdj" >
+   <button id="vc" href="{% url 'voice' %}">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  </div>
+<!-- partial:index.partial.html -->
+<a href="#">
+  <figure>
+   
+ 
+</figure>
+
+</a>
+
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+</body>
+</html>
