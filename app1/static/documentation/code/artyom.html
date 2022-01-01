@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <title>Towi Bot Documentation</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+        <link rel="stylesheet" href="../docStyle.css" type="text/css">
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="columns">
+                <div class="column hide-lg col-xl-2" id="leftPane">
+                    <h3>Towi Bot</h3>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="#">How to use</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="#">Code</a>
+                            <ul class="nav">
+                            <li class="nav-item">
+                                <a href="code/base.html">BoilerPlate</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Artyom</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Navbar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Empty states</a>
+                            </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Components</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Utilities</a>
+                        </li>
+                        </ul>             
+                </div>
+                <div class="column col-10 col-xl-10 col-lg-10 col-md-12 col-xs-12" id="rightPane">
+                    <header class="navbar">
+                        <section class="navbar-center">
+                        </section>
+                        <section class="navbar-section">
+                            
+                            <svg height="32px" id="Layer_1" class="show-md" style="enable-background:new 0 0 32 32; fill: #5755d9; margin-left: -10px; padding-right: 10px;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg>
+                           <img src="../icons/logo.svg" alt="..." width="32px;">
+                                <a href="#" class="btn btn-link hide-md">Docs</a>
+                                <a href="#" class="btn btn-link hide-md">Examples</a>
+                                <a href="#" class="btn btn-link">GitHub</a>
+                            </section>
+
+                            <section class="navbar-section">
+                                
+                            </section>
+                        </header>
+                    <section>
+                        <p id="start">In this section, we are going to deal with the <b>artyom.js</b> library.</p>
+                        <h4>Introduction</h4>
+                        <p> <b>Artyom</b> is a javascript library, created by <a href="https://github.com/sdkcarlos">sdkcarlos</a> in which it uses webkitSpeechRecognition and  speechSynthesis APIs in the backend to provide a quick resonsive speech recognition. </p>
+                    </section>
+                    <section>
+                        <h4>Creating instance</h4>
+                        <p>I hope you already have empty files named <code>speech.js</code> and <code>data.js</code> in your project. If not, create them.</p>
+                        <p>Now open <code>speech.js</code> and create the instance of artyom file into it (copy the below code and paste it)</p>
+                                                <pre class="code"><code><span class="btn float-right" onclick="copytext(`const artyom = new Artyom();`);">copy</span><xmp>const artyom = new Artyom();</xmp></code>
+                            </pre>
+
+                        <p>Well, now insert this function below that line to use the voice regonition services. </p>                                                    
+                        <pre class="code"><code><span class="btn float-right" onclick="copytext(`function startOneCommandArtyom(){
+    artyom.fatality();// use this to stop any of
+
+    setTimeout(function(){// if you use artyom.fatality , wait 250 ms to initialize again.
+         artyom.initialize({
+            lang:'en-GB',// A lot of languages are supported. Read the docs !
+            continuous:false,// recognize 1 command and stop listening !
+            listen:true, // Start recognizing
+            debug:true, // Show everything in the console
+            speed:1 // talk normally
+        }).then(function(){
+            
+        });
+  `);">copy</span><xmp>
+function startOneCommandArtyom(){
+    artyom.fatality();// use this to stop any of
+
+    setTimeout(function(){// if you use artyom.fatality , wait 250 ms to initialize again.
+         artyom.initialize({
+            lang:"en-GB",// A lot of languages are supported. Read the docs !
+            continuous:false,// recognize 1 command and stop listening !
+            listen:true, // Start recognizing
+            debug:true, // Show everything in the console
+            speed:1 // talk normally
+        }).then(function(){
+            
+        });
+  
+                        </xmp></code>
+                    </section>
+                    <section>
+                        
+                    </section>
+                </div>
+            </div>
+        </div>
+
+    <script>
+        function copytext(data){
+            var tempInput = document.createElement("input");
+            tempInput.setAttribute('value',data);
+            document.body.append(tempInput);
+            tempInput.select();
+            document.execCommand("copy");
+            tempInput.remove();
+        }
+    </script>
+    </body>
+</html>
+

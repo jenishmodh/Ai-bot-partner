@@ -1,0 +1,122 @@
+<html>
+    <head>
+        <title>Towi Bot Documentation</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+        <link rel="stylesheet" href="../docStyle.css" type="text/css">
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="columns">
+                <div class="column hide-lg col-xl-2" id="leftPane">
+                    <h3>Towi Bot</h3>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="#">How to use</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="#">Code</a>
+                            <ul class="nav">
+                            <li class="nav-item">
+                                <a href="code/base.html">BoilerPlate</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Artyom</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Navbar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Empty states</a>
+                            </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Components</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Utilities</a>
+                        </li>
+                        </ul>             
+                </div>
+                <div class="column col-10 col-xl-10 col-lg-10 col-md-12 col-xs-12" id="rightPane">
+                    <header class="navbar">
+                        <section class="navbar-center">
+                        </section>
+                        <section class="navbar-section">
+                            
+                            <svg height="32px" id="Layer_1" class="show-md" style="enable-background:new 0 0 32 32; fill: #5755d9; margin-left: -10px; padding-right: 10px;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg>
+                           <img src="../icons/logo.svg" alt="..." width="32px;">
+                                <a href="#" class="btn btn-link hide-md">Docs</a>
+                                <a href="#" class="btn btn-link hide-md">Examples</a>
+                                <a href="#" class="btn btn-link">GitHub</a>
+                            </section>
+
+                            <section class="navbar-section">
+                                
+                            </section>
+                        </header>
+                    <section>
+                    	<p id="start">This is the page where all begins. This is not a tutorial but an explanation for what's happening behind the hood.</p>
+                    		<p>You could get all the code in the github link <a href="https://github.com/harsha20599/towibot">here</a> </p>
+						
+						<h6>If you want to create your own bot, you can create your own UI or take my index.html & style.css file to get started</h6><br>
+						<h5>Your UI must meet the following requirements:</h5>
+						<ul>
+							<li>A button to start recognizing</li>
+							<li>A text view to show the result</li>
+							<li>A text view to show the recognized text</li>
+
+						</ul>
+
+                    </section><br>
+                    <section>
+                    	<h3>Linking the files</h3>
+                    	<p>I hope you are ready with your UI, having the above mentioned requirements. Now let's link our crutial files.</p>
+                    	<h6>1. Here, we use <b>Artyom.js</b> library to ease our voice command recognition</h6>
+                    	<p>First of all, download the <code id="uncode">Artyom.js</code> file from <a href="https://github.com/sdkcarlos/artyom.js/blob/master/build/artyom.js">here</a> </p>
+						<p>After download, place the file into your project's directory and add the script file into <code>head</code> section of your <b>index.html</b> file</p>
+						<pre class="code"><code><xmp><script src="yourproject/artyom.js"></script></xmp></code></pre>
+
+						<p> <b>2.</b> Well, we need <b>Jquery</b> for little things. But, I always love playing with vanilla javascript</p>
+						<p>Copy and paste the below code in <code>head</code> section of your <b>index.html</b> file</p>
+
+						<pre class="code"><code><span class="btn float-right" onclick="copytext(`<script  src='https://code.jquery.com/jquery-3.3.1.min.js'></script>`);">copy</span><xmp><script  src="https://code.jquery.com/jquery-3.3.1.min.js"></script></xmp></code>
+						</pre>
+						
+						<p><b>3.</b> Create two empty javascript files named <code>speech.js</code> and <code>data.js</code> in your project and link them before closing <code>body</code> tag in your <b>index.html</b> file</p>
+						<pre class="code"><code><span class="btn float-right" onclick="copytext(`<script  src='yourproject/speech.js'></script>
+							<script  src='yourproject/data.js'></script>
+						</body>
+						</html>
+						`);">copy</span><xmp>
+						  ..
+  <script  src="yourproject/speech.js"></script>
+  <script  src="yourproject/data.js"></script>
+ </body>
+</html>
+						</xmp></code>
+						</pre>
+						<p>we're going to talk about those empty files in the next <a href="artyom.html">artyom</a> section</p>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+
+    <script>
+        function copytext(data){
+            var tempInput = document.createElement("input");
+            tempInput.setAttribute('value',data);
+            document.body.append(tempInput);
+            tempInput.select();
+            document.execCommand("copy");
+            tempInput.remove();
+        }
+    </script>
+    </body>
+</html>
+
