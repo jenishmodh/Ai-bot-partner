@@ -1,0 +1,366 @@
+<html>
+    <head>
+        <title>Towi Bot Documentation</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+        <link rel="stylesheet" href="docStyle.css" type="text/css">
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="columns">
+                <div class="column hide-lg col-xl-2" id="leftPane">
+                    <h3>Towi Bot</h3>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="#">How to use</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="#">Code</a>
+                            <ul class="nav">
+                            <li class="nav-item">
+                                <a href="code/base.html">BoilerPlate</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Artyom</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Navbar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Empty states</a>
+                            </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Components</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Utilities</a>
+                        </li>
+                        </ul>             
+                </div>
+                <div class="column col-10 col-xl-10 col-lg-10 col-md-12 col-xs-12" id="rightPane">
+                    <header class="navbar">
+                        <section class="navbar-center">
+                        </section>
+                        <section class="navbar-section">
+                            
+                            <svg height="32px" id="Layer_1" class="show-md" style="enable-background:new 0 0 32 32; fill: #5755d9; margin-left: -10px; padding-right: 10px;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg>
+                           <img src="icons/logo.svg" alt="..." width="32px;">
+                                <a href="#" class="btn btn-link hide-md">Docs</a>
+                                <a href="#" class="btn btn-link hide-md">Examples</a>
+                                <a href="#" class="btn btn-link">GitHub</a>
+                            </section>
+                            <section class="navbar-section">
+                                
+                            </section>
+                        </header>
+                    <section>
+                        <h3 id="heading">Towi Bot</h3>
+                        <!-- <figure class="avatar avatar-xl" style="width: 40px;height: 40px;"> -->
+                        <!-- </figure> -->
+                        <p> <b>Towibot </b> is a voice chat bot built using  <a href="https://sdkcarlos.github.io/sites/artyom.html" id="link">artyom.js</a>, vanilla javascript, Jquery and with API calls </p>
+
+                        <h3 id="playtitle"> Play with it </h3>
+
+
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="avatar avatar-xl" data-initial="YZ" style="background: none;">
+                                    <img src="icons/navigation.svg" id="serviceIcon" alt="...">
+                                </figure>
+                            <span id="serviceHeading">Navigation</span>
+
+                            </div>
+                          <div class="card-header">
+                            <div class="card-subtitle text-gray">
+                                <pre class="code" data-lang="TowiBot"><code> <b>Navigate me to</b> Hyderabad </code></pre>
+                                <pre class="code" data-lang="TowiBot"><code> Let's go to mumbai </code></pre>
+                                <pre class="code" data-lang="TowiBot"><code>Take me to chennai</code></pre>
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <button class="btn float-right">Try it</button>
+                          </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="avatar avatar-xl" data-initial="YZ" style="background: none;">
+                                    <img src="icons/distance.svg" id="serviceIcon" alt="...">
+                                </figure>
+                            <span id="serviceHeading">Distance</span>
+
+                            </div>
+                          <div class="card-header">
+                            <div class="card-subtitle text-gray">
+                                <pre class="code" data-lang="TowiBot"><code> How far is Delhi to me </code></pre>
+                                <pre class="code" data-lang="TowiBot"><code> What is the distance from me to Hyderabad </code></pre>
+                                <pre class="code" data-lang="TowiBot"><code>How long is Chennai to me</code></pre>
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <button class="btn float-right">Try it</button>
+                          </div>
+                        </div>     
+
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="avatar avatar-xl" data-initial="YZ" style="background: none;">
+                                    <img src="icons/calculation.svg" id="serviceIcon" alt="...">
+                                </figure>
+                            <span id="serviceHeading">Calculation</span>
+
+                            </div>
+                            <div class="card-header">
+                                <div class="card-subtitle text-gray">
+                                    <pre class="code" data-lang="TowiBot"><code>calculate 25 times 12 </code></pre>
+                                    <pre class="code" data-lang="TowiBot"><code> how much is 15 divided by 3 </code></pre>
+                                    <pre class="code" data-lang="TowiBot"><code>Evaluate 75 plus 90</code></pre>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <button class="btn float-right">Try it</button>
+                            </div>
+                        </div>        
+
+
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="avatar avatar-xl" data-initial="YZ" style="background: none;">
+                                    <img src="icons/weather.svg" id="serviceIcon" alt="...">
+                                </figure>
+                            <span id="serviceHeading">Weather</span>
+
+                            </div>
+                            <div class="card-header">
+                                <div class="card-subtitle text-gray">
+                                    <pre class="code" data-lang="TowiBot"><code>What's the weather now</code></pre>
+                                    <pre class="code" data-lang="TowiBot"><code>Is it rain today ?</code></pre>
+                                    <pre class="code" data-lang="TowiBot"><code>What is the weather at hyderabad</code></pre>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <button class="btn float-right">Try it</button>
+                            </div>
+                        </div>                                                                 
+
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="avatar avatar-xl" data-initial="YZ" style="background: none;">
+                                    <img src="icons/dictionary.svg" id="serviceIcon" alt="...">
+                                </figure>
+                            <span id="serviceHeading">Dictionary</span>
+
+                            </div>
+                            <div class="card-header">
+                                <div class="card-subtitle text-gray">
+                                    <pre class="code" data-lang="TowiBot"><code>what is the meaning of stare</code></pre>
+                                    <pre class="code" data-lang="TowiBot"><code>Define computer</code></pre>
+                                    <pre class="code" data-lang="TowiBot"><code>show me the another meaning of stranger</code></pre>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <button class="btn float-right">Try it</button>
+                            </div>
+                        </div> 
+
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="avatar avatar-xl" data-initial="YZ" style="background: none;">
+                                    <img src="icons/remember.svg" id="serviceIcon" alt="...">
+                                </figure>
+                            <span id="serviceHeading">Remember</span>
+
+                            </div>
+                            <div class="card-header">
+                                <div class="card-subtitle text-gray">
+                                <p>It uses your local storage; pretty secured.</p>
+                                    <pre class="code" data-lang="TowiBot"><code>Remember that my name is Harsha</code></pre>
+                                    <pre class="code" data-lang="TowiBot"><code>What is my name</code></pre>
+                                    <!-- <pre class="code" data-lang="TowiBot"><code>show me the another meaning of stranger</code></pre> -->
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <button class="btn float-right">Try it</button>
+                            </div>
+                            
+                        </div>
+
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="avatar avatar-xl" data-initial="YZ" style="background: none;">
+                                    <img src="icons/location.svg" id="serviceIcon" alt="...">
+                                </figure>
+                            <span id="serviceHeading">Location</span>
+
+                            </div>
+                            <div class="card-header">
+                                <div class="card-subtitle text-gray">
+                                    <p>It's from browser, may not be exact</p>
+                                    <pre class="code" data-lang="TowiBot"><code>Where am I</code></pre>
+                                    <pre class="code" data-lang="TowiBot"><code>What's my location</code></pre>
+                                    <!-- <pre class="code" data-lang="TowiBot"><code>show me the another meaning of stranger</code></pre> -->
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <button class="btn float-right">Try it</button>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="avatar avatar-xl" data-initial="YZ" style="background: none;">
+                                    <img src="icons/translate.svg" id="serviceIcon" alt="...">
+                                </figure>
+                            <span id="serviceHeading">Translate</span>
+
+                            </div>
+                            <div class="card-header">
+                                <div class="card-subtitle text-gray">
+                                   <span class="chip">Hindi</span><span class="chip">English</span><span class="chip">Telugu</span><span class="chip">Tamil</span><span class="chip">Urdu</span><span class="chip">Kannada</span><span class="chip">Arabic</span> <span class="chip">Chinese</span>
+                                    <p>Only these were currently supported</p>
+                                    <pre class="code" data-lang="TowiBot"><code>Translate Aap ka naam kya hai</code></pre>
+                                    <pre class="code" data-lang="TowiBot"><code>Translate I am good into telugu</code></pre>
+                                    <pre class="code" data-lang="TowiBot"><code>Translate Good morning in chinese</code></pre>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <button class="btn float-right">Try it</button>
+                            </div>
+                        </div> 
+
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="avatar avatar-xl" data-initial="YZ" style="background: none;">
+                                    <img src="icons/search.svg" id="serviceIcon" alt="...">
+                                </figure>
+                            <span id="serviceHeading">Search</span>
+
+                            </div>
+                            <div class="card-header">
+                                <div class="card-subtitle text-gray">
+                                    <p>make sure that pop-ups are allowed</p>
+                                    <pre class="code" data-lang="TowiBot"><code>Search for mark Zuckerberg</code></pre>
+                                    <pre class="code" data-lang="TowiBot"><code>Search for harsha20599 in youtube</code></pre>
+                                    <pre class="code" data-lang="TowiBot"><code>Search Taylor Swift in google</code></pre>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <button class="btn float-right">Try it</button>
+                            </div>
+                        </div> 
+
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="avatar avatar-xl" data-initial="YZ" style="background: none;">
+                                    <img src="icons/goto.svg" id="serviceIcon" alt="...">
+                                </figure>
+                            <span id="serviceHeading">Goto</span>
+
+                            </div>
+                            <div class="card-header">
+                                <div class="card-subtitle text-gray">
+                                    <pre class="code" data-lang="TowiBot"><code>Goto facebook</code></pre>
+                                    <pre class="code" data-lang="TowiBot"><code>Goto to google.com</code></pre>
+                                    <pre class="code" data-lang="TowiBot"><code>Take me to amazon</code></pre>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <button class="btn float-right">Try it</button>
+                            </div>
+                        </div> 
+
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="avatar avatar-xl" data-initial="YZ" style="background: none;">
+                                    <img src="icons/other.svg" id="serviceIcon" alt="...">
+                                </figure>
+                            <span id="serviceHeading">Miscellaneous</span>
+
+                            </div>
+                            <div class="card-header">
+                                <div class="card-subtitle text-gray">
+                                    <pre class="code" data-lang="TowiBot"><code>Pronounce psychology</code></pre>
+                                    <pre class="code" data-lang="TowiBot"><code>What is the time now</code></pre>
+                                    <pre class="code" data-lang="TowiBot"><code>Hello</code></pre>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <button class="btn float-right">Try it</button>
+                            </div>
+                        </div> 
+
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="avatar avatar-xl" data-initial="YZ" style="background: none;">
+                                    <img src="icons/donate.svg" id="serviceIcon" alt="...">
+                                </figure>
+                            <span id="serviceHeading">Many more yet to come.</span>
+
+                            </div>
+                            <div class="card-header">
+                                <div class="card-subtitle text-gray">
+                                    <p>Afford me a cup of coffee</p>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <figure class="avatar avatar-xl" style="width: 40px;height: 40px; background: none;">
+                                              <img src="icons/paypal.png" alt="...">
+                                            </figure>
+                                              <span>paypal.me/harsha20599</span>
+                                              <a href="https://paypal.me/harsha20599" target="_blank">  
+                                                    <div class="btn float-right" id="copy" >open</div>
+                                              </a>
+
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <figure class="avatar avatar-xl" style="width: 40px;height: 40px;">
+                                              <img src="icons/paytm.png" alt="...">
+                                            </figure>
+                                              <span>8886389385</span>
+                                              <div class="btn float-right" id="copy" onclick="copytext('8886389385');">copy</div>
+
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <figure class="avatar avatar-xl" style="width: 40px;height: 40px;">
+                                              <img src="icons/upi.jpg" alt="...">
+                                            </figure>
+                                              <span class="text-gray">harsha20599@ybl</span>
+                                              <div class="btn float-right" id="copy" onclick="copytext('harsha202599@ybl');">copy</div>
+
+                                        </div>
+                                    </div>                                    
+                                    <!-- <pre class="code" data-lang="TowiBot"><code>Thanks for playing with towi</code></pre> -->
+                                </div>
+                            <div class="card-body">
+                                <button class="btn float-right">Try it</button>
+                            </div>
+                        </div> 
+                    </section>
+
+                </div>
+            </div>
+        </div>
+
+    <script>
+        function copytext(data){
+            // data.select();
+            var t = document.createElement("input");
+            t.setAttribute('value',data);
+            document.body.append(t);
+            t.select();
+            document.execCommand("copy");
+            t.remove();
+        }
+    </script>
+    </body>
+</html>
+
