@@ -9,11 +9,11 @@ Install the requirements:
   
 Apply the migrations:
 
-	/bower/l/:python manage.py migrate
+	python manage.py migrate
   
 Finally, run the development server:
 
-  	/bower/l/:python manage.py migrate
+  	python manage.py migrate
     
   
 The project will be available at 127.0.0.1:8000.
