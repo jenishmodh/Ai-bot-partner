@@ -33,5 +33,4 @@ Voicebot:
 ![voice](https://user-images.githubusercontent.com/70342788/147847427-5cacbc9e-e85c-43b0-b730-02af660019be.png)
 
 # Developed By  
-[Jenish Modh](https://github.com/jenishmodh/) ,  [Devarsh Mistry]()
-]
+[Jenish Modh](https://github.com/jenishmodh/) ,  [Devarsh Mistry](https://github.com/devarsh-mistry)
